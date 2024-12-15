@@ -1,0 +1,10 @@
+# Discart
+*
+
+# Only files
+!.dockerignore
+!.env.example
+!.gitignore
+!Dockerfile
+!README.md
+!docker-compose.yml
