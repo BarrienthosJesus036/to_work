@@ -11,6 +11,10 @@ Comandos de arranque:
 
 Para acceder a la maquina interactiva de docker usaras el siguiente comando:
 
-    docker exec -it <MACHINE_NAME> /bin/bash
+    docker exec -it ubuntu-learning /bin/bash
 
-Donde MACHINE_NAME es el nombre que definiste en el archivo `.env`
+Cuidado al hacer un:
+
+    docker compose down --volumes
+
+Utilizar el `--volumes` eliminara todo los datos de tu espacio de docker, para es solo no utilices `--volumes`

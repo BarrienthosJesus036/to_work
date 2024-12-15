@@ -1,6 +1,9 @@
 # Discart
 *
 
+# Only folders
+!app/
+
 # Only files
 !.dockerignore
 !.env.example

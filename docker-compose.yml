@@ -1,14 +1,15 @@
 services:
      so:
-          container_name: ${MACHINE_NAME}
+          container_name: ubuntu-learning
           build: .
           volumes:
                - ubuntu-learning:/data
-               - ./:/app
+               - ./app:/app
           ports:
                - "${MACHINE_PORT_EXPORT}:3000"
           tty: true
           stdin_open: true
+          working_dir: /app
 
 volumes:
      ubuntu-learning:
